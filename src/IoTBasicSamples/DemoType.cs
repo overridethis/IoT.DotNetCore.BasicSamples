@@ -4,8 +4,9 @@
     {
         Led,    // GPIO
         Button, // GPIO
-        Buzzer, // PWM
-        RgbLed, // DeviceBinding - PWM
-        DHT11   // DeviceBinding 
+        Buzzer, // PWM - Device
+        RgbLed, // PWM 
+        DHT11,   // One-Wire Protocol
+        LCD1602  // i2c
     }
 }
