@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace IoTBasicSamples
 {
-    class Program
+    static class Program
     {
         private const string RunModeError = "[RUN] Must provide a valid mode to run.";
 
@@ -39,7 +39,7 @@ namespace IoTBasicSamples
                 }, tokenSource.Token);
 
 
-            Console.WriteLine($"[RUN{demoType.ToString()}]: Press any key to exit.");
+            Console.WriteLine($"[RUN:{demoType.ToString()}]: Press any key to exit.");
             Console.ReadKey();
 
             tokenSource.Cancel();
